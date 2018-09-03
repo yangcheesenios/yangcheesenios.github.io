@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jailbreaks.fun/img/apple-touch-icon.png?v=kP3gxrBMez">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jailbreaks.fun/img/favicon-32x32.png?v=kP3gxrBMez">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jailbreaks.fun/img/favicon-16x16.png?v=kP3gxrBMez">
+    <link rel="manifest" href="https://jailbreaks.fun/img/site.webmanifest?v=kP3gxrBMez">
+    <link rel="mask-icon" href="https://jailbreaks.fun/img/safari-pinned-tab.svg?v=kP3gxrBMez" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon.ico?v=kP3gxrBMez">
+    <meta name="apple-mobile-web-app-title" content="Jailbreak">
+    <meta name="application-name" content="zOS">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="https://jailbreaks.fun/img/browserconfig.xml?v=kP3gxrBMez">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-startup-image" href="https://jailbreaks.fun/images/splash/launch-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://jailbreaks.fun/images/splash/launch-750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://jailbreaks.fun/images/splash/launch-1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://jailbreaks.fun/images/splash/launch-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://jailbreaks.fun/images/splash/launch-1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://jailbreaks.fun/images/splash/launch-1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://jailbreaks.fun/images/splash/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <!-- Search Engine -->
+    <meta name="description" content="jailbreaks.fun is the #1 place to get the best jailbreaks for your device.">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="zOS">
+    <meta itemprop="description" content="zos.github.io is the #1 place to get the best jailbreaks for your device.">
+    <title>Jailbreaks</title>
+    <link rel="stylesheet" href="https://jailbreaks.fun/css/fonts.css">
+    <link rel="stylesheet" href="https://jailbreaks.fun/css/fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://jailbreaks.fun/css/framework7.ios.css">
+    <link rel="stylesheet" href="https://jailbreaks.fun/css/framework7.ios.colors.css">
+    <link rel="stylesheet" href="https://jailbreaks.fun/css/pinwheel.css">
+    <link rel="stylesheet" href="https://jailbreaks.fun/css/my-app.css">
+    <script type="text/javascript" src="https://jailbreaks.fun/js/inobounce.js"></script>
+    <script type="text/javascript">
+      iNoBounce.enable();
+    </script>
+    <style type="text/css">
+    * {
+      font-family: 'Gilroy', sans-serif;
+    }
+    html, body {
+      background: #000;
+    }
+      .profileList .item-text {
+        margin-top: -20px;
+      }
+
+      .profileList .item-title {
+        height: 40px;
+      }
+      .list-block.media-list .item-link .item-title-row, .list-block li.media-item .item-link .item-title-row {
+        margin-top: 17px;
+        background-position: right 13px;
+        /*background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%2060%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'm60%2061.5-38.25%2038.25-9.75-9.75%2029.25-28.5-29.25-28.5%209.75-9.75z'%20fill%3D'%23696979'%2F%3E%3C%2Fsvg%3E");*/
+      }
+
+      img.active {
+        opacity: 0.4;
+      }
+
+      .loader-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99999;
+        background-color: #FFFFFF;
+      }
+
+      .cssload-loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 78.284271247462px;
+        height: 78.284271247462px;
+        margin-left: -39.142135623731px;
+        margin-top: -39.142135623731px;
+        border-radius: 100%;
+        animation-name: cssload-loader;
+        -o-animation-name: cssload-loader;
+        -ms-animation-name: cssload-loader;
+        -webkit-animation-name: cssload-loader;
+        -moz-animation-name: cssload-loader;
+        animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        animation-duration: 2.4s;
+        -o-animation-duration: 2.4s;
+        -ms-animation-duration: 2.4s;
+        -webkit-animation-duration: 2.4s;
+        -moz-animation-duration: 2.4s;
+      }
+
+      .cssload-loader .cssload-side {
+        display: block;
+        width: 10px;
+        height: 33px;
+        background-color: #4b87f7;
+        /*background-image: linear-gradient(to top, #635ddb, #716be0, #7f79e4, #8c87e8, #9995ec);*/
+        box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+        margin: 3px;
+        position: absolute;
+        border-radius: 50%;
+        animation-duration: 0.895s;
+        -o-animation-duration: 0.895s;
+        -ms-animation-duration: 0.895s;
+        -webkit-animation-duration: 0.895s;
+        -moz-animation-duration: 0.895s;
+        animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        -o-animation-timing-function: ease;
+        -ms-animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+        -moz-animation-timing-function: ease;
+      }
+
+      .cssload-loader .cssload-side:nth-child(1),
+      .cssload-loader .cssload-side:nth-child(5) {
+        transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        animation-name: cssload-rotate0;
+        -o-animation-name: cssload-rotate0;
+        -ms-animation-name: cssload-rotate0;
+        -webkit-animation-name: cssload-rotate0;
+        -moz-animation-name: cssload-rotate0;
+      }
+
+      .cssload-loader .cssload-side:nth-child(3),
+      .cssload-loader .cssload-side:nth-child(7) {
+        transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        animation-name: cssload-rotate90;
+        -o-animation-name: cssload-rotate90;
+        -ms-animation-name: cssload-rotate90;
+        -webkit-animation-name: cssload-rotate90;
+        -moz-animation-name: cssload-rotate90;
+      }
+
+      .cssload-loader .cssload-side:nth-child(2),
+      .cssload-loader .cssload-side:nth-child(6) {
+        transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        animation-name: cssload-rotate45;
+        -o-animation-name: cssload-rotate45;
+        -ms-animation-name: cssload-rotate45;
+        -webkit-animation-name: cssload-rotate45;
+        -moz-animation-name: cssload-rotate45;
+      }
+
+      .cssload-loader .cssload-side:nth-child(4),
+      .cssload-loader .cssload-side:nth-child(8) {
+        transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        animation-name: cssload-rotate135;
+        -o-animation-name: cssload-rotate135;
+        -ms-animation-name: cssload-rotate135;
+        -webkit-animation-name: cssload-rotate135;
+        -moz-animation-name: cssload-rotate135;
+      }
+
+      .cssload-loader .cssload-side:nth-child(1) {
+        top: 39.142135623731px;
+        left: 78.284271247462px;
+        margin-left: -5px;
+        margin-top: -16px;
+        animation-delay: 0;
+        -o-animation-delay: 0;
+        -ms-animation-delay: 0;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+      }
+
+      .cssload-loader .cssload-side:nth-child(2) {
+        top: 67.213203431093px;
+        left: 67.213203431093px;
+        margin-left: -5px;
+        margin-top: -16px;
+        animation-delay: 0;
+        -o-animation-delay: 0;
+        -ms-animation-delay: 0;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+      }
+
+      .cssload-loader .cssload-side:nth-child(3) {
+        top: 78.284271247462px;
+        left: 39.142135623731px;
+        margin-left: -5px;
+        margin-top: -16px;
+        animation-delay: 0;
+        -o-animation-delay: 0;
+        -ms-animation-delay: 0;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+      }
+
+      .cssload-loader .cssload-side:nth-child(4) {
+        top: 67.213203431093px;
+        left: 11.071067816369px;
+        margin-left: -5px;
+        margin-top: -16px;
+        animation-delay: 0;
+        -o-animation-delay: 0;
+        -ms-animation-delay: 0;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+      }
+
+      .cssload-loader .cssload-side:nth-child(5) {
+        top: 39.142135623731px;
+        left: 0px;
+        margin-left: -5px;
+        margin-top: -16px;
+        animation-delay: 0;
+        -o-animation-delay: 0;
+        -ms-animation-delay: 0;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+      }
+
+      .cssload-loader .cssload-side:nth-child(6) {
+        top: 11.071067816369px;
+        left: 11.071067816369px;
+        margin-left: -5px;
+        margin-top: -16px;
+        animation-delay: 0;
+        -o-animation-delay: 0;
+        -ms-animation-delay: 0;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+      }
+
+      .cssload-loader .cssload-side:nth-child(7) {
+        top: 0px;
+        left: 39.142135623731px;
+        margin-left: -5px;
+        margin-top: -16px;
+        animation-delay: 0;
+        -o-animation-delay: 0;
+        -ms-animation-delay: 0;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+      }
+
+      .cssload-loader .cssload-side:nth-child(8) {
+        top: 11.071067816369px;
+        left: 67.213203431093px;
+        margin-left: -5px;
+        margin-top: -16px;
+        animation-delay: 0;
+        -o-animation-delay: 0;
+        -ms-animation-delay: 0;
+        -webkit-animation-delay: 0;
+        -moz-animation-delay: 0;
+      }
+
+      @keyframes cssload-rotate0 {
+        0% {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+        }
+        60% {
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+        }
+        100% {
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+        }
+      }
+      @-webkit-keyframes cssload-rotate0 {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        60% {
+          -webkit-transform: rotate(180deg);
+        }
+        100% {
+          -webkit-transform: rotate(180deg);
+        }
+      }
+      @keyframes cssload-rotate90 {
+        0% {
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+        60% {
+          -webkit-transform: rotate(270deg);
+                  transform: rotate(270deg);
+          transform: rotate(270deg);
+        }
+        100% {
+          -webkit-transform: rotate(270deg);
+                  transform: rotate(270deg);
+          transform: rotate(270deg);
+        }
+      }
+      @-webkit-keyframes cssload-rotate90 {
+        0% {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+        60% {
+          -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+        }
+        100% {
+          -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+        }
+      }
+      @keyframes cssload-rotate45 {
+        0% {
+          -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        60% {
+          -webkit-transform: rotate(225deg);
+                  transform: rotate(225deg);
+          transform: rotate(225deg);
+        }
+        100% {
+          -webkit-transform: rotate(225deg);
+                  transform: rotate(225deg);
+          transform: rotate(225deg);
+        }
+      }
+      @-webkit-keyframes cssload-rotate45 {
+        0% {
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        60% {
+          -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+        }
+        100% {
+          -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+        }
+      }
+      @keyframes cssload-rotate135 {
+        0% {
+          -webkit-transform: rotate(135deg);
+                  transform: rotate(135deg);
+          transform: rotate(135deg);
+        }
+        60% {
+          -webkit-transform: rotate(315deg);
+                  transform: rotate(315deg);
+          transform: rotate(315deg);
+        }
+        100% {
+          -webkit-transform: rotate(315deg);
+                  transform: rotate(315deg);
+          transform: rotate(315deg);
+        }
+      }
+      @-webkit-keyframes cssload-rotate135 {
+        0% {
+          -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+        }
+        60% {
+          -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+        }
+        100% {
+          -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+        }
+      }
+      @keyframes cssload-loader {
+        0% {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes cssload-loader {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      .buttons-row .button:first-child {
+          border-radius: 0px;
+          border-left: none
+      }
+
+      .buttons-row .button:last-child {
+          border-radius: 0px;
+          border-right: none
+      }
+      .buttons-row .button {
+          border-radius: 0 0 0 0;
+      }
+      .buttons-row .button.active {
+          border-bottom: 2px solid #4b87f7;
+          color: #4b87f7;
+      }
+      .buttons-row .button {
+        font-weight: 600;
+        border: none;
+        color: #B2B2B2;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        border-radius: 0px;
+        line-height: 27px;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background: none;
+        padding: 0 10px;
+        margin: 0;
+        height: 29px;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-family: inherit;
+        cursor: pointer;
+        outline: 0;
+      }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body class="layout-default" style="color: #333 !important;">
+    <!-- <script src="//go.mobtrks.com/notice.php?p=1815106&interstitial=1"></script> -->
+    <!-- <script src="//go.mobtrks.com/notice.php?p=1817666&interstitial=1"></script> -->
+    <div id="loader-wrap" class="loader-wrap">
+      <div class="cssload-loader">
+        <div class="cssload-side"></div>
+        <div class="cssload-side"></div>
+        <div class="cssload-side"></div>
+        <div class="cssload-side"></div>
+        <div class="cssload-side"></div>
+        <div class="cssload-side"></div>
+        <div class="cssload-side"></div>
+        <div class="cssload-side"></div>
+      </div>
+    </div>
+    <div class="statusbar-overlay" style="display: none; background: transparent;"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <div class="views toolbar-through">
+      <div id="view-1" class="view view-main">
+        <div class="navbar" style="background: rgba(255, 255, 255, 1); height: 90px;">
+          <div class="navbar-inner">
+            <div class="left sliding" style="margin-left: 10px; margin-top: 30px; height: 103px; font-size: 37px; color: #778a99; font-weight: 700; text-transform: none;">zOS</div>
+            <div class="center sliding" style="font-size: 20px;"></div>
+            <div class="right sliding" style=""></div>
+            <div class="subnavbar" style="background: rgba(255, 255, 255, 1);">
+                <div class="buttons-row">
+                    <a href="#tab1" class="button tab-link active">jailbreak App Beta</a>
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="pages navbar-through">
+          <div data-page="index-1" class="page with-subnavbar">
+            <div class="page-content" style="background: #FFFFFF;">
+              <div class="tabs">
+                <div id="tab1" class="">
+                  <center>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://www.twitter.com/Yangcheesen" class="link external" style="border-radius: 2.25rem;"><img src="https://raw.githubusercontent.com/yangcheesenios/ipa/master/42E17BA6-FBB8-4C70-B6AD-0A1E1568038A.png" style="border-radius: 0.25 rem; box-shadow: 0 1rem 2rem 0 rgba(208, 223, 232, 0);" width="120px" height="60px"></a>
+                  </center>
+                  <div class="list-block media-list">
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="itms-services://?action=download-manifest&url=https://github.com/yangcheesenios/plist/raw/master/Electra1131_MPTCP.plist" class="item-link item-content" data-name="Electra1131 MPTCP" data-icon="https://ipas.fun/images/electra1131.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra1131.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Electra1131 MPTCP</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="https://jailbreaks.fun/img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  68944                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="https://ignition.fun/install/Electra1131_VFS/fun_ignition_Electra1131 VFS/electra1131_vfs/Electra1131 VFS/test.json" href="view-app.php?bundleID=funignitionelectra1131vfs" class="item-link item-content" data-name="Electra1131 VFS" data-icon="https://ipas.fun/images/electra1131.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra1131.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Electra1131 VFS</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  49614                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="https://ignition.fun/install/Rollectra/fun_ignition_Rollectra/rollectra/Rollectra/test.json" href="view-app.php?bundleID=funignitionrollectra" class="item-link item-content" data-name="Rollectra" data-icon="https://ipas.fun/images/rollectra.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/rollectra.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Rollectra</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  10308                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="https://ignition.fun/install/Electra/fun_ignition_Electra1112/electra/Electra1112/test.json" href="view-app.php?bundleID=funignitionelectra1112" class="item-link item-content" data-name="Electra1112" data-icon="https://ipas.fun/images/electra.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Electra1112</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  3390                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="https://ignition.fun/install/Th0r/fun_ignition_Th0r/th0r/Th0r/test.json" href="view-app.php?bundleID=funignitionth0r" class="item-link item-content" data-name="Th0r" data-icon="https://ipas.fun/images/th0r.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/th0r.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Th0r</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  1532                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="https://ignition.fun/install/ElectraRemover1131_VFS/fun_ignition_ElectraRemover1131 VFS/electraremover1131_vfs/ElectraRemover1131 VFS/test.json" href="view-app.php?bundleID=funignitionelectraremover1131vfs" class="item-link item-content" data-name="ElectraRemover1131 VFS" data-icon="https://ipas.fun/images/electraremover1131_vfs.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electraremover1131_vfs.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">ElectraRemover1131 VFS</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  1154                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="https://ignition.fun/install/Meridian/fun_ignition_Meridian/meridian/Meridian/test.json" href="view-app.php?bundleID=funignitionmeridian" class="item-link item-content" data-name="Meridian" data-icon="https://ipas.fun/images/meridian.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/meridian.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Meridian</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  142                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="https://ignition.fun/install/ElectraTV_VFS_1,0,4/fun_ignition_ElectraTV VFS 1_0_4/electratv_vfs_1,0,4/ElectraTV VFS 1,0,4/test.json" href="view-app.php?bundleID=funignitionelectratvvfs104" class="item-link item-content" data-name="ElectraTV VFS 1.0.4" data-icon="https://ipas.fun/images/electratv_vfs_1.0.4.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electratv_vfs_1.0.4.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">ElectraTV VFS 1.0.4</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  120                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                                                <ul style="background: white !important;">
+                        <li>
+                          <a data-plist="https://ignition.fun/install/rootlessJB/fun_ignition_rootlessJB/rootlessjb/rootlessJB/test.json" href="view-app.php?bundleID=funignitionrootlessjb" class="item-link item-content" data-name="rootlessJB" data-icon="https://ipas.fun/images/rootlessjb.png">
+                            <div class="item-media">
+                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/rootlessjb.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                            </div>
+                            <div class="item-inner" style="max-height: 80px;">
+                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                <div class="item-title" style="font-weight: 600; font-size: 18px;">rootlessJB</div>
+                              </div>
+                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                  JAILBREAKS                                </span>
+                                &nbsp;|&nbsp;
+                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                <span style="color: #4b87f7; font-size: 13px;">
+                                  47                                </span>
+                                &nbsp;|&nbsp;
+                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                                                </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div style="height: 10px;"></div>
+                                      </div>
+                </div>
+                <div id="tab2" class="tab">
+                  <center>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://www.patreon.com/bePatron?u=4655942" class="link external" style="border-radius: 2.25rem;"><img src="img/become_a_patron_button.png" style="border-radius: 2.25rem; box-shadow: 0 1rem 2rem 0 rgba(208, 223, 232, 0.32);" width="175px" height="40px"></a>
+                  </center>
+                  <div class="list-block media-list">
+                    <ul style="background: white !important;">
+                       <li>
+                          <a href="https://www.youtube.com/channel/UCAc5-CySN7SKYiNPznLIflQ" class="item-link item-content external">
+                             <div class="item-media">
+                                <img class="lazy-fadeIn lazy-loaded" src="https://yt3.ggpht.com/-IHGqf2y-Ygg/AAAAAAAAAAI/AAAAAAAAAAA/1lUjRpNlZ5o/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                             </div>
+                             <div class="item-inner" style="max-height: 80px;">
+                                <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                   <div class="item-title" style="font-weight: 600; font-size: 18px;">iDevice Central</div>
+                                </div>
+                                <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                  <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                    MEDIA
+                                  </span>
+                                  &nbsp;|&nbsp;
+                                  <span style="color: #6BD068; font-size: 13px;">
+                                    YOUTUBE
+                                  </span>
+                                </div>
+                             </div>
+                          </a>
+                       </li>
+                    </ul>
+                    <ul style="background: white !important;">
+                       <li>
+                          <!-- <a data-plist="https://jailbreaks.fun/install/Electra1131_MPTCP/fun_ignition_Electra1131 MPTCP/electra1131/Electra1131 MPTCP/test.json" href="view-app.php?bundleID=funignitionelectra1131mptcp" class="item-link item-content installLink" data-name="Electra1131 MPTCP" data-icon="https://ipas.fun/images/electra1131.png"> -->
+                            <a href="view-app.php?bundleID=funignitionelectra1131mptcp" class="item-link item-content" data-name="Electra1131 MPTCP" data-icon="https://ipas.fun/images/electra1131.png">
+                             <div class="item-media">
+                                <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra1131.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                             </div>
+                             <div class="item-inner" style="max-height: 80px;">
+                                <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                   <div class="item-title" style="font-weight: 600; font-size: 18px;">Electra1131 MPTCP</div>
+                                </div>
+                                <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                  <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                    JAILBREAKS
+                                  </span>
+                                  &nbsp;|&nbsp;
+                                  <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                  <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                  <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                  <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                  <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                  <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                  <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                  <span style="color: #4b87f7; font-size: 13px;">
+                                    68944                                  </span>
+                                  &nbsp;|&nbsp;
+                                  <span style="color: #E11D77; font-size: 13px;">
+                                    ROOT
+                                  </span>
+                                </div>
+                             </div>
+                          </a>
+                       </li>
+                    </ul>
+                    <!-- <ul style="background: white !important;">
+                      <li>
+                        <a href="https://eclipseemu.me" class="item-link item-content external" data-name="Eclipse" data-icon="img/eclipse.png">
+                          <div class="item-media">
+                            <img class="lazy-fadeIn lazy-loaded" src="img/eclipse.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                          </div>
+                          <div class="item-inner" style="max-height: 80px;">
+                            <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                              <div class="item-title" style="font-weight: 600; font-size: 18px;">Eclipse</div>
+                            </div>
+                            <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                              <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                EMULATORS
+                              </span>
+                              &nbsp;|&nbsp;
+                              <span style="color: #4b87f7; font-size: 13px;">
+                                NO REVOKES
+                              </span>
+                              &nbsp;|&nbsp;
+                              <span style="color: #6BD068; font-size: 13px;">
+                                SAFE
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul> -->
+                  </div>
+                  <div class="list-block media-list accordion-list">
+                    <ul style="background: #fff !important;">
+                                                                                                                                                                                                                    <li class="accordion-item">
+                              <a href="#" class="item-content item-link">
+                                <div class="item-media">
+                                  <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra1131.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                </div>
+                                <div class="item-inner">
+                                  <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                    <div class="item-title">Jailbreaks</div>
+                                  </div>
+                                  <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                    <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                      JAILBREAKS                                    </span>
+                                    &nbsp;|&nbsp;
+                                                                          <span style="color: #E11D77; font-size: 13px;">
+                                        ROOT
+                                      </span>
+                                                                        </div>
+                                </div>
+                              </a>
+                              <div class="accordion-item-content">
+                                <div class="list-block list-block-search searchbar-found media-list" style="margin-left: 10px;">
+                                                                                                                                                                                    <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/Electra/fun_ignition_Electra1112/electra/Electra1112/test.json" href="view-app.php?bundleID=funignitionelectra1112" class="item-link item-content" data-name="Electra1112" data-icon="https://ipas.fun/images/electra.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Electra1112</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  3390                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                                                                                                                                        <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/Electra1131_MPTCP/fun_ignition_Electra1131 MPTCP/electra1131/Electra1131 MPTCP/test.json" href="view-app.php?bundleID=funignitionelectra1131mptcp" class="item-link item-content" data-name="Electra1131 MPTCP" data-icon="https://ipas.fun/images/electra1131.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra1131.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Electra1131 MPTCP</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  68944                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                                                                                                                                        <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/Electra1131_VFS/fun_ignition_Electra1131 VFS/electra1131_vfs/Electra1131 VFS/test.json" href="view-app.php?bundleID=funignitionelectra1131vfs" class="item-link item-content" data-name="Electra1131 VFS" data-icon="https://ipas.fun/images/electra1131.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra1131.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Electra1131 VFS</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  49614                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                                                                                                                                        <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/ElectraRemover1131_VFS/fun_ignition_ElectraRemover1131 VFS/electraremover1131_vfs/ElectraRemover1131 VFS/test.json" href="view-app.php?bundleID=funignitionelectraremover1131vfs" class="item-link item-content" data-name="ElectraRemover1131 VFS" data-icon="https://ipas.fun/images/electraremover1131_vfs.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electraremover1131_vfs.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">ElectraRemover1131 VFS</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  1154                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                                                                                                                                        <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/ElectraTV_VFS_1,0,4/fun_ignition_ElectraTV VFS 1_0_4/electratv_vfs_1,0,4/ElectraTV VFS 1,0,4/test.json" href="view-app.php?bundleID=funignitionelectratvvfs104" class="item-link item-content" data-name="ElectraTV VFS 1.0.4" data-icon="https://ipas.fun/images/electratv_vfs_1.0.4.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electratv_vfs_1.0.4.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">ElectraTV VFS 1.0.4</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  120                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                                                                                                                                        <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/Meridian/fun_ignition_Meridian/meridian/Meridian/test.json" href="view-app.php?bundleID=funignitionmeridian" class="item-link item-content" data-name="Meridian" data-icon="https://ipas.fun/images/meridian.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/meridian.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Meridian</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  142                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                                                                                                                                        <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/Rollectra/fun_ignition_Rollectra/rollectra/Rollectra/test.json" href="view-app.php?bundleID=funignitionrollectra" class="item-link item-content" data-name="Rollectra" data-icon="https://ipas.fun/images/rollectra.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/rollectra.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Rollectra</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  10308                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                                                                                                                                        <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/rootlessJB/fun_ignition_rootlessJB/rootlessjb/rootlessJB/test.json" href="view-app.php?bundleID=funignitionrootlessjb" class="item-link item-content" data-name="rootlessJB" data-icon="https://ipas.fun/images/rootlessjb.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/rootlessjb.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">rootlessJB</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  47                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                                                                                                                                        <ul style="background: white !important;">
+                                        <li>
+                                          <a data-plist="https://ignition.fun/install/Th0r/fun_ignition_Th0r/th0r/Th0r/test.json" href="view-app.php?bundleID=funignitionth0r" class="item-link item-content" data-name="Th0r" data-icon="https://ipas.fun/images/th0r.png">
+                                            <div class="item-media">
+                                              <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/th0r.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                                            </div>
+                                            <div class="item-inner" style="max-height: 80px;">
+                                              <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                                                <div class="item-title" style="font-weight: 600; font-size: 18px;">Th0r</div>
+                                              </div>
+                                              <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                                                <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                                  JAILBREAKS                                                </span>
+                                                &nbsp;|&nbsp;
+                                                <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                                                <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                                                <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                                                <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                                                <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                                                <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                                                <img src="img/downloadsUpBlue.png" style="width: 15px; height: 15px;">
+                                                <span style="color: #4b87f7; font-size: 13px;">
+                                                  1532                                                </span>
+                                                &nbsp;|&nbsp;
+                                                                                                  <span style="color: #E11D77; font-size: 13px;">
+                                                    ROOT
+                                                  </span>
+                                                                                                </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div style="height: 10px;"></div>
+                                                                                                                                    </div>
+                            </div>
+                          </li>
+                                                                                                                                                                                                                                                          </ul>
+                  </div>
+                </div>
+                <div id="tab3" class="tab">
+                  <center>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://www.patreon.com/bePatron?u=4655942" class="link external" style="border-radius: 2.25rem;"><img src="img/become_a_patron_button.png" style="border-radius: 2.25rem; box-shadow: 0 1rem 2rem 0 rgba(208, 223, 232, 0.32);" width="175px" height="40px"></a>
+                    <br>
+                    <br>
+                    <h1 style="color: #333;">ExoResign</h1>
+                    <p style="width: 85%;">ExoResign allows you to sign your favourite apps for free using our certificate!<br>The review process can take anywhere from 24-48 hours. This process allows us to make sure we do not sign and host malware, scams and a like.</p>
+                    <!-- <a href="#" class="button button-big" style="border: none; border-radius: 2.25rem; width: 65%; box-shadow: 0 1rem 2rem 0 rgba(208, 223, 232, 0.32); -webkit-appearance: none; background: #f1f4f7; color: #778a99; font-weight: 600;">New App</a> -->
+                    <a href="#" class="button button-big" style="border: none; border-radius: 2.25rem; width: 65%; box-shadow: 0 1rem 2rem 0 rgba(208, 223, 232, 0.32); -webkit-appearance: none; background: #f1f4f7; color: #778a99; font-weight: 600;">Login</a>
+                    <br>
+                                        <a href="#" onclick="myApp.prompt('Please enter your ExoResign Beta Code', 'ExoResign Gatekeeper', function (value) { myApp.alert('Invalid Beta Code. There are currently <b>3</b> available beta code(s)', 'ExoResign Gatekeeper'); });" class="button button-big" style="border: none; border-radius: 2.25rem; width: 65%; box-shadow: 0 1rem 2rem 0 rgba(208, 223, 232, 0.32); -webkit-appearance: none; background: #4b87f7; color: #ffffff; font-weight: 600;">Redeem Code</a>
+                                      </center>
+                  <div class="list-block media-list" style="display: none;">
+                    <ul style="background: white !important;">
+                      <li>
+                        <!-- installLink -->
+                        <a data-plist="" href="#" class="item-link item-content">
+                          <div class="item-media">
+                            <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/spotify++.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                          </div>
+                          <div class="item-inner" style="max-height: 80px;">
+                            <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                              <div class="item-title" style="font-weight: 600; font-size: 18px;">Spotify++</div>
+                            </div>
+                            <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                              <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                EXORESIGN
+                              </span>
+                              &nbsp;|&nbsp;
+                              <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                              <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                              <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                              <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                              <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                              <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                              <span style="color: #6BD068; font-size: 13px;">
+                                ACCEPTED
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div style="height: 10px;"></div>
+                    <ul style="background: white !important;">
+                      <li>
+                        <!-- installLink -->
+                        <a data-plist="" href="#" class="item-link item-content">
+                          <div class="item-media">
+                            <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/123_movies.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                          </div>
+                          <div class="item-inner" style="max-height: 80px;">
+                            <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                              <div class="item-title" style="font-weight: 600; font-size: 18px;">123 Movies</div>
+                            </div>
+                            <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                              <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                EXORESIGN
+                              </span>
+                              &nbsp;|&nbsp;
+                              <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                              <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                              <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                              <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                              <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                              <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                              <span style="color: #F7AA2C; font-size: 13px;">
+                                IN REVIEW
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div style="height: 10px;"></div>
+                    <ul style="background: white !important;">
+                      <li>
+                        <!-- installLink -->
+                        <a data-plist="" href="#" class="item-link item-content">
+                          <div class="item-media">
+                            <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/electra1131.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                          </div>
+                          <div class="item-inner" style="max-height: 80px;">
+                            <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                              <div class="item-title" style="font-weight: 600; font-size: 18px;">Electra1131 VFS</div>
+                            </div>
+                            <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                              <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                EXORESIGN
+                              </span>
+                              &nbsp;|&nbsp;
+                              <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                              <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                              <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                              <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                              <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                              <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                              <span style="color: #4b87f7; font-size: 13px;">
+                                PENDING
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div style="height: 10px;"></div>
+                    <ul style="background: white !important;">
+                      <li>
+                        <!-- installLink -->
+                        <a data-plist="" href="#" class="item-link item-content">
+                          <div class="item-media">
+                            <img class="lazy-fadeIn lazy-loaded" src="https://ipas.fun/images/hexatech.png" style="height: 50px; width: 50px; border-radius: 12px; color: white; box-shadow: 0px 3px 11px 2px rgba(60, 60, 60, 0.2);">
+                          </div>
+                          <div class="item-inner" style="max-height: 80px;">
+                            <div class="item-title-row" style="margin-top: 1px; height: 40px; background-position-y: 11px;">
+                              <div class="item-title" style="font-weight: 600; font-size: 18px;">HexaTech VPN</div>
+                            </div>
+                            <div class="item-text" style="margin-top: -10px; color: #e2e2e2; font-weight: 600;">
+                              <span class="badge" style="padding: 0px 13px; height: 20px; background: #E6E5FF; color: #8583BC; font-size: 12px; font-weight: 600; line-height: 20px;">
+                                EXORESIGN
+                              </span>
+                              &nbsp;|&nbsp;
+                              <!-- CLEAN <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #6BD068; margin-top: 10px;"></div> -->
+                              <!-- ROOT <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C; margin-top: 10px;"></div> -->
+                              <!-- <div style="border-radius: 50%; width: 13px; height: 13px; display: inline-block; background: #F7AA2C;"></div> -->
+                              <!-- CLEAN <span style="color: #6BD068; font-size: 13px;"> -->
+                              <!-- ROOT <span style="color: #F7AA2C; font-size: 13px;"> -->
+                              <!-- DANGER <span style="color: #E11D77; font-size: 13px;"> -->
+                              <span style="color: #E11D77; font-size: 13px;">
+                                REJECTED
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="toolbar tabbar tabbar-labels"> -->
+      <!-- <div class="toolbar tabbar">
+        <div class="toolbar-inner">
+          <a href="#view-1" class="tab-link active">
+            <i class="icon dashboard"></i>
+          </a>
+          <a href="#view-2" class="tab-link">
+            <i class="icon apps"></i>
+          </a>
+          <a href="#view-3" class="tab-link">
+            <i class="icon settings"></i>
+          </a>
+        </div>
+      </div> -->
+    </div>
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <script type="text/javascript" src="js/pinwheel.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <script type="text/javascript" src="js/moments.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript">
+
+      if (localStorage.getItem('welcome')) {
+        $("#notifications").slideDown(200);
+      } else {
+        $("#intro").slideDown(200);
+      }
+
+      (function(funcName, baseObj) {
+          funcName = funcName || "docReady";
+          baseObj = baseObj || window;
+          var readyList = [];
+          var readyFired = false;
+          var readyEventHandlersInstalled = false;
+
+          function ready() {
+              if (!readyFired) {
+                  readyFired = true;
+                  for (var i = 0; i < readyList.length; i++) {
+                      readyList[i].fn.call(window, readyList[i].ctx);
+                  }
+                  readyList = [];
+              }
+          }
+
+          function readyStateChange() {
+              if ( document.readyState === "complete" ) {
+                  ready();
+              }
+          }
+
+          baseObj[funcName] = function(callback, context) {
+              if (typeof callback !== "function") {
+                  throw new TypeError("callback for docReady(fn) must be a function");
+              }
+              if (readyFired) {
+                  setTimeout(function() {callback(context);}, 1);
+                  return;
+              } else {
+                  readyList.push({fn: callback, ctx: context});
+              }
+              if (document.readyState === "complete") {
+                  setTimeout(ready, 1);
+              } else if (!readyEventHandlersInstalled) {
+                  if (document.addEventListener) {
+                      document.addEventListener("DOMContentLoaded", ready, false);
+                      window.addEventListener("load", ready, false);
+                  } else {
+                      document.attachEvent("onreadystatechange", readyStateChange);
+                      window.attachEvent("onload", ready);
+                  }
+                  readyEventHandlersInstalled = true;
+              }
+          }
+      })("docReady", window);
+
+      docReady(function() {
+          $(window).on('load', function() {
+              setTimeout(function() {
+                  $('#loader-wrap').fadeOut('slow', function() {
+                      $("#loader-wrap").hide();
+                  });
+              }, 100);
+          });
+      });
+
+      // $('.pin-widget').each(function(){   //tagname based selector
+      //     var hammertime = new Hammer(this);
+      //     var plist = $(this).attr('data-plist');
+      //     // var orig = $(".pin-title", this).text();
+      //     hammertime.get('swipe').set({ direction: Hammer.DIRECTION_LEFT });
+      //     hammertime.on('swipe', function(ev) {
+      //       console.log(ev);
+      //       // $(".pin-title", this).text('DOWNLOADING');
+      //       $("#downloadingNotification").slideDown('100');
+            
+            
+      //     });
+      // });
+
+
+      $$(".installLink").on('click', function() {
+        var plist = $(this).attr('data-plist');
+
+        myApp.alert('Remember to press \'Open\' if it asks to Open in iTunes!', 'Ignition', function () {
+          $.ajax({
+            url: plist,
+            type: 'GET',
+            data: {idk: 'idk'},
+            success: function(data) {
+              window.location.href = data;
+              // setTimeout(function() {
+              //   $("#downloadingNotification").slideUp('100');
+              // }, 1000);
+              // $(".pin-title", this).text('DOWNLOADED');
+            }
+          });
+        });
+      });
+     
+
+      function toggleNotification(name) {
+        if (!$('#'+name+'-backdrop-1').hasClass('opened') && !$('#'+name+'-backdrop-2').hasClass('opened')) {
+          $('#'+name+'-backdrop-1').animate({
+            'margin-top': '10px',
+            'width': '95%',
+            'z-index': 0
+          }, 200);
+
+          $('#'+name+'-backdrop-1').addClass('opened');
+
+          $('#'+name+'-backdrop-2').animate({
+            'margin-top': '10px',
+            'width': '95%',
+            'z-index': 0
+          }, 200);
+
+          $('#'+name+'-backdrop-2').addClass('opened');
+          $('#'+name+'-backdrop-1').hide();
+          $('#'+name+'-backdrop-2').hide();
+          $('.'+name+'-widget').slideDown('200');
+
+        } else {
+          $('#'+name+'-backdrop-1').show();
+          $('#'+name+'-backdrop-2').show();
+          $('#'+name+'-backdrop-1').animate({
+            'margin-top': '-79px',
+            'width': '91%',
+            'z-index': '-1'
+          }, 200);
+
+          $('#'+name+'-backdrop-1').removeClass('opened');
+
+          $('#'+name+'-backdrop-2').animate({
+            'margin-top': '-79px',
+            'width': '85%',
+            'z-index': '-2'
+          }, 200);
+
+          $('#'+name+'-backdrop-2').removeClass('opened');
+          $('.'+name+'-widget').hide();
+        }
+      }
+      startTime();
+      function startTime() {
+          var today = new Date();
+          // var h = today.getHours();
+          // var m = today.getMinutes();
+          // var s = today.getSeconds();
+          // m = checkTime(m);
+          // s = checkTime(s);
+          $$('#date').text(moment().format('dddd, D MMMM'));
+          $$("#time").text(formatAMPM(today));
+          var t = setTimeout(startTime, 500);
+      }
+
+      function formatAMPM(date) {
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var ampm = hours >= 12 ? '' : '';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0'+minutes : minutes;
+        var strTime = hours + ':' + minutes + ' ' + ampm;
+        return strTime;
+      }
+
+      function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+      }
+
+
+      // setInterval(function() {
+      //   $$.ajax({
+      //     url: 'top10.php',
+      //     type: 'GET',
+      //     success: function(data) {
+      //       $$("#top10").html(data);
+      //     }
+      //   });
+      // }, 5000);
+
+      // setInterval(function() {
+      //   $$.ajax({
+      //     url: 'loadApps.php',
+      //     type: 'GET',
+      //     success: function(data) {
+      //       $$("#apps").html(data);
+      //     }
+      //   });
+      // }, 10000);
+      
+      // var mySwiper = new Swiper('.swiper-container', {
+      //   // preloadImages: false,
+      //   // lazyLoading: true,
+      //   effect: 'coverflow',
+      //   grabCursor: true,
+      //   initialSlide: 1,
+      //   centeredSlides: true,
+      //   slidesPerView: 'auto',
+      //   autoplay: 2500,
+      //   autoplayDisableOnInteraction: false
+      // });
+
+      function download(time) {
+        var container = $$('body');
+        if (container.children('.progressbar, .progressbar-infinite').length) return; //don't run all this if there is a current progressbar loading
+        myApp.showProgressbar(container, 'multi');
+        setTimeout(function () {
+            myApp.hideProgressbar();
+        }, time);
+      }
+
+      // const checkbox = document.getElementById('darkModeToggle');
+      // const checkbox2 = document.getElementById('oledModeToggle');
+
+      // checkbox.addEventListener('change', (event) => {
+      //   if (event.target.checked) {
+      //     $$("body").removeClass('layout-default');
+      //     $$("body").removeClass('layout-oled');
+      //     $$("body").addClass('layout-dark');
+      //     localStorage.setItem('darkMode', "enabled");
+      //     localStorage.setItem('oledMode', "disabled");
+      //     checkbox2.checked = false;
+      //   } else {
+      //     $$("body").addClass('layout-default');
+      //     $$("body").removeClass('layout-dark');
+      //     $$("body").removeClass('layout-oled');
+      //     localStorage.setItem('darkMode', "disabled");
+      //   }
+      // });
+
+      // if (localStorage.getItem('darkMode') && localStorage.getItem('darkMode') != "disabled") {
+      //   $$("body").removeClass('layout-default');
+      //   $$("body").removeClass('layout-oled');
+      //   $$("body").addClass('layout-dark');
+      //   $$("#darkModeToggle").attr('checked', 'checked');
+      // } else {
+
+      // }
+
+      // checkbox2.addEventListener('change', (event) => {
+      //   if (event.target.checked) {
+      //     $$("body").removeClass('layout-default');
+      //     $$("body").removeClass('layout-dark');
+      //     $$("body").addClass('layout-oled');
+      //     localStorage.setItem('darkMode', "disabled");
+      //     localStorage.setItem('oledMode', "enabled");
+      //     checkbox.checked = false;
+      //   } else {
+      //     $$("body").addClass('layout-default');
+      //     $$("body").removeClass('layout-oled');
+      //     $$("body").removeClass('layout-dark');
+      //     localStorage.setItem('oledMode', "disabled");
+      //   }
+      // });
+
+      // if (localStorage.getItem('oled') && localStorage.getItem('oled') != "disabled") {
+      //   $$("body").removeClass('layout-default');
+      //   $$("body").removeClass('layout-dark');
+      //   $$("body").addClass('layout-oled');
+      //   $$("#oledModeToggle").attr('checked', 'checked');
+      // } else {
+
+      // }
+
+      // function toggleDarkMode() {
+      //   if (document.getElementById('darkModeToggle').checked) {
+      //       $$("body").addClass('layout-dark');
+      //   } else {
+      //       $$("body").removeClass('layout-dark');
+      //   }
+      // }
+    </script>
+    <!-- <script type="text/javascript">
+      // Function called if AdBlock is not detected
+      function adBlockNotDetected() {
+        // alert('AdBlock is not enabled');
+      }
+      // Function called if AdBlock is detected
+      function adBlockDetected() {
+        // alert('AdBlock is enabled');
+        myApp.popup('.popup-adblock');
+
+      }
+
+      // We look at whether FuckAdBlock already exists.
+      if(typeof fuckAdBlock !== 'undefined' || typeof FuckAdBlock !== 'undefined') {
+        // If this is the case, it means that something tries to usurp are identity
+        // So, considering that it is a detection
+        adBlockDetected();
+      } else {
+        // Otherwise, you import the script FuckAdBlock
+        var importFAB = document.createElement('script');
+        importFAB.onload = function() {
+          // If all goes well, we configure FuckAdBlock
+          fuckAdBlock.onDetected(adBlockDetected)
+          fuckAdBlock.onNotDetected(adBlockNotDetected);
+        };
+        importFAB.onerror = function() {
+          // If the script does not load (blocked, integrity error, ...)
+          // Then a detection is triggered
+          adBlockDetected(); 
+        };
+        importFAB.integrity = 'sha256-xjwKUY/NgkPjZZBOtOxRYtK20GaqTwUCf7WYCJ1z69w=';
+        importFAB.crossOrigin = 'anonymous';
+        importFAB.src = 'https://cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js';
+        document.head.appendChild(importFAB);
+      }
+    </script> -->
+      <!-- <div class="login-screen modal-in">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <style type="text/css">
+              .header__bg {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: 280px;
+                z-index: -1;
+                /*border-bottom-left-radius: 50% 16%;
+                border-bottom-right-radius: 50% 16%; */
+                background-image: linear-gradient(to top, #0be2f1, #00dcf6, #00d5fa, #00cefd, #00c7ff);
+                transform: skewY(-6deg);
+                transform-origin: top left;
+              }
+            </style>
+            <div style="height: 280px;">
+              <div class="header__bg"></div>
+              <center>
+                <img src="img/flame.png" width="35px" height="45px" style="margin-top: 15%;">
+                <h3 style="color: white; font-size: 20px; margin-top: 10px; font-weight: 700;">IGNITION</h3>
+                <p style="color: white; font-weight: 500; width: 60%; margin-top: -9px; font-size: 16px;">The 3rd Party AppStore that cares about its users.</p>
+              </center>
+            </div>
+            <div>
+              <a href="#" class="close-login-screen button button-fill" style="height: 45px; background: #00D0FB; border-radius: 50px; width: 150px; line-height: 45px; font-size: 17px; font-weight: 500; margin-left: auto; margin-right: auto; margin-top: 40px; box-shadow: 0px 0px 30px -2px rgba(0, 0, 0, 0.16);">Enter</a>
+              <center>
+                <h2>What's new?</h2>
+              </center>
+              <p>
+                <ul>
+                  <li>New Design</li>
+                  <li>Better App Management</li>
+                  <li>Improved Speeds</li>
+                </ul>
+              </p>
+              <center>
+                <h2>Coming Soon</h2>
+              </center>
+              <p>
+                <ul>
+                  <li>App Information</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="popup popup-adblock">
+      <br>
+      <center>
+        <h1 style="font-size: 29px; font-weight: 600;" class="">AdBlock, really?</h1>
+        <p style="width: 98%;">We know ads are annoying however we provide you with a service that costs thousands of dollars a month without you paying a single cent. Everyone uses an AdBlocker once and a while, we do as well and will admit it. However we ask that you disable your AdBlocker and reload our site. Thank you.</p>
+      </center>
+
+    </div>
+    <div class="popup appInfo">
+      <div class="content-block">
+        <div class="content-block-title" style="height: 60px;"><span id="title">App</span><a href="#" style="margin-top: 2px; float: right;"><img class="lazy-fadeIn lazy-loaded" src="img/download.png" width="32px" height="32px"></a><br><span style="font-size: 16px; color: #999999;" id="author">Developer</span></div>
+        <!-- <center>
+          <div>
+            <img id="img1" class="lazy-fadeIn lazy-loaded" src="img/iphonex.png" width="auto" height="275px" style="margin-right: 10px; border-radius: 6px; border: 3px white solid; -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.41); -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.41); box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.41);">
+            <img id="img2" class="lazy-fadeIn lazy-loaded" src="img/iphonex.png" width="auto" height="275px" style="border-radius: 6px; border: 3px white solid; -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.41); -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.41); box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.41);">
+          </div>
+        </center>
+        <div class="infoBlock" style="padding-bottom: 40px;">
+          <div class="content-block-title">Description</div>
+          <div class="content-block">
+            <p id="description">Description</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
